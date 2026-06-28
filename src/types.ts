@@ -5,6 +5,8 @@ export interface Product {
   description: string;
   price: number;
   discountPrice?: number;
+  priceTHB?: number;
+  discountPriceTHB?: number;
   size: string;
   sku: string;
   stock: number;

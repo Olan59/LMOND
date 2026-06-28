@@ -390,7 +390,13 @@ export default function CheckoutView({
                           <p className="text-[10px] text-[#5C564F]">Qty: {item.quantity}</p>
                         </div>
                       </div>
-                      <span className="font-bold text-[#1A1A1A]">${(price * item.quantity).toFixed(2)}</span>
+                      <span className="font-bold text-[#1A1A1A]">
+                        {prod.priceTHB ? (
+                          `฿${((prod.discountPriceTHB || prod.priceTHB) * item.quantity)}`
+                        ) : (
+                          `$${(price * item.quantity).toFixed(2)}`
+                        )}
+                      </span>
                     </div>
                   );
                 })}

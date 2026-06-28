@@ -322,7 +322,7 @@ export default function App() {
                     <div className="lg:col-span-5 space-y-6">
                       <div className="relative group rounded-3xl overflow-hidden border border-[#E8E1D5] bg-[#FDFBF7] shadow-xl">
                         <img
-                          src="/src/assets/images/almond_cream_brightening_1782645399805.jpg"
+                          src="/src/assets/images/almond_brightening_cream_1782645951696.jpg"
                           alt="LMOND Almond Brightening Cream Infographic"
                           className="h-full w-full object-cover aspect-square hover:scale-105 transition-transform duration-700"
                           referrerPolicy="no-referrer"

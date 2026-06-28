@@ -163,7 +163,13 @@ export default function CartView({
                               </button>
                             </div>
 
-                            <span className="font-semibold text-[#1A1A1A]">${(price * item.quantity).toFixed(2)}</span>
+                            <span className="font-semibold text-[#1A1A1A]">
+                              {prod.priceTHB ? (
+                                `฿${((prod.discountPriceTHB || prod.priceTHB) * item.quantity)}`
+                              ) : (
+                                `$${(price * item.quantity).toFixed(2)}`
+                              )}
+                            </span>
                           </div>
                         </div>
 

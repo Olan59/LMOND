@@ -173,7 +173,16 @@ export default function ProductDetailView({
 
           {/* Pricing */}
           <div className="flex items-baseline gap-3 border-t border-[#E8E1D5] pt-6">
-            {product.discountPrice ? (
+            {product.priceTHB ? (
+              product.discountPriceTHB ? (
+                <>
+                  <span className="text-3xl font-light text-[#1A1A1A]">฿{product.discountPriceTHB}</span>
+                  <span className="text-lg text-stone-400 line-through">฿{product.priceTHB}</span>
+                </>
+              ) : (
+                <span className="text-3xl font-light text-[#1A1A1A]">฿{product.priceTHB}</span>
+              )
+            ) : product.discountPrice ? (
               <>
                 <span className="text-3xl font-light text-[#1A1A1A]">${product.discountPrice}</span>
                 <span className="text-lg text-stone-400 line-through">${product.price}</span>
@@ -307,7 +316,13 @@ export default function ProductDetailView({
             >
               <span>Add to Formula Cart</span>
               <span>•</span>
-              <span>${((product.discountPrice || product.price) * quantity).toFixed(2)}</span>
+              <span>
+                {product.priceTHB ? (
+                  `฿${((product.discountPriceTHB || product.priceTHB) * quantity)}`
+                ) : (
+                  `$${((product.discountPrice || product.price) * quantity).toFixed(2)}`
+                )}
+              </span>
             </button>
 
             <button
@@ -562,7 +577,9 @@ export default function ProductDetailView({
                 <div>
                   <h3 className="text-xs font-bold text-[#1A1A1A]">{relProduct.name}</h3>
                   <p className="text-[10px] text-[#5C564F]">{relProduct.subtitle}</p>
-                  <p className="text-xs font-semibold text-[#1A1A1A] mt-1">${relProduct.price}</p>
+                  <p className="text-xs font-semibold text-[#1A1A1A] mt-1">
+                    {relProduct.priceTHB ? `฿${relProduct.priceTHB}` : `$${relProduct.price}`}
+                  </p>
                 </div>
               </div>
             ))}
@@ -575,7 +592,9 @@ export default function ProductDetailView({
         <div className="flex items-center justify-between gap-4 max-w-7xl mx-auto">
           <div>
             <p className="text-xs font-semibold text-[#1A1A1A] truncate max-w-[150px]">{product.name}</p>
-            <p className="text-[10px] text-[#5C564F]">${product.discountPrice || product.price}</p>
+            <p className="text-[10px] text-[#5C564F]">
+              {product.priceTHB ? `฿${product.discountPriceTHB || product.priceTHB}` : `$${product.discountPrice || product.price}`}
+            </p>
           </div>
           <button
             onClick={() => onAddToCart(product, 1)}

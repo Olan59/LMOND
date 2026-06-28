@@ -140,6 +140,111 @@ export const mockIngredients: Ingredient[] = [
 
 export const mockProducts: Product[] = [
   {
+    id: "cleanser-almond-oil",
+    name: "LMOND Almond Cleansing Oil",
+    subtitle: "Deeply dissolving sweet almond lipid oil cleanser",
+    description: "A premium, high-affinity botanical cleansing oil designed to effortlessly dissolve stubborn sebum, heavy makeup, and water-resistant sunscreen while nourishing the cellular lipid barrier. Leveraging cold-pressed Sweet Almond Oil and protective Tocopheryl Acetate, it micro-emulsifies upon contact with water, leaving the skin touchably soft, calm, and perfectly hydrated with no greasy residue.",
+    price: 14,
+    priceTHB: 490,
+    size: "200 ml",
+    sku: "LMD-CLN-OIL",
+    stock: 30,
+    category: "Cleanser",
+    concern: "Dryness",
+    rating: 4.9,
+    image: "/src/assets/images/almond_cleansing_oil_1782645938097.jpg",
+    gallery: [
+      "/src/assets/images/almond_cleansing_oil_1782645938097.jpg"
+    ],
+    ingredients: ["Squalane"],
+    texture: "Luxurious Botanical Oil",
+    scent: "Sweet cold-pressed almond essence",
+    clinicalEvidence: "Dermatological testing on 40 subjects demonstrated a 100% complete removal of water-resistant cosmetics and a 42% increase in skin barrier hydration post-cleanse.",
+    directions: "Apply 2-3 pumps onto dry palms and massage gently onto dry face for 60 seconds. Add a splash of warm water to emulsify into a light milky lotion, then rinse clean.",
+    benefits: [
+      "Effortlessly dissolves waterproof makeup and deep follicular sebum",
+      "Softens dry, flaky epidermal skin cells",
+      "Maintains cellular hydration with essential fatty acids",
+      "Leaves zero heavy residue, fully water-soluble"
+    ],
+    warnings: "For external use only. Keep out of reach of children. Discontinue if redness or discomfort occurs.",
+    reviewsCount: 88,
+    faq: [
+      { question: "Do I need to double cleanse?", answer: "While this cleansing oil emulsifies and rinses off completely clean, you can follow with our Refining Face Cleanser for a bespoke double-cleanse ritual if you have active congestion." },
+      { question: "Is it suitable for eyelash extensions?", answer: "Because it contains natural plant lipids, we recommend avoiding rubbing directly on lash bonds to prolong extension lifespan." }
+    ]
+  },
+  {
+    id: "moisturizer-almond-brightening",
+    name: "LMOND Almond Brightening Cream",
+    subtitle: "Skin Regeneration & Intense Moisture",
+    description: "A masterfully calibrated moisturizing treatment designed to accelerate epidermal cell regeneration, hydrate deep stratum corneum layers, and promote standard tone uniformity. Synergizing nourishing Sweet Almond Oil and Macadamia Nut Oil with active Vitamin C and Niacinamide, it seals the cutaneous lipid barrier and reveals a bright, smooth, and resilient skin state.",
+    price: 14,
+    priceTHB: 490,
+    size: "50 ml",
+    sku: "LMD-ALM-050",
+    stock: 35,
+    category: "Moisturizer",
+    concern: "Dark Spots",
+    rating: 4.9,
+    image: "/src/assets/images/almond_brightening_cream_1782645951696.jpg",
+    gallery: [
+      "/src/assets/images/almond_brightening_cream_1782645951696.jpg"
+    ],
+    ingredients: ["Niacinamide", "Squalane"],
+    texture: "Velvety Emulsion Cream",
+    scent: "Delicate natural cold-pressed sweet almond and light vanilla",
+    clinicalEvidence: "Clinical trials showed a 38% increase in epidermal hydration and a 29% improvement in skin tone radiance over a 28-day testing period with twice-daily application.",
+    directions: "Smooth a dime-sized amount onto clean face and neck in the morning and evening. Massage gently in upward circular motions until absorbed. Excellent under makeup.",
+    benefits: [
+      "Fades dark spots and optimizes overall tone radiance",
+      "Delivers intense, long-lasting moisture to dry cellular zones",
+      "Nourishes the lipid barrier to prevent transepidermal moisture loss",
+      "Accelerates natural skin regeneration and recovery"
+    ],
+    warnings: "For external use only. If irritation occurs, discontinue use. We recommend a patch test behind the neck before initial active facial application.",
+    reviewsCount: 112,
+    faq: [
+      { question: "Can I use this in my morning routine?", answer: "Yes! In fact, the Vitamin C and Niacinamide inside provide excellent antioxidant defense against environmental stressors during the day." },
+      { question: "Is it suitable for sensitive skin?", answer: "Absolutely. Sweet almond oil and macadamia nut oil are extremely gentle emollient lipids, and when paired with standard active concentrations, they soothe skin sensitivity." }
+    ]
+  },
+  {
+    id: "serum-vit-c-990",
+    name: "LMOND Vitamin C Whitening Premium Serum",
+    subtitle: "High-potency Vitamin C & Hyaluronic brightening elixir",
+    description: "A high-performance whitening treatment synergizing active Vitamin C (VitaCE 990) with high-density Hyaluronic Acid and natural Aloe Vera. Engineered to target deep melanosome synthesis, reverse photoaging damage, and restore a luminous cellular glow, this lightweight fluid sinks in instantly to reveal a completely unified, glass-like complexion.",
+    price: 17,
+    priceTHB: 590,
+    size: "30 ml",
+    sku: "LMD-VTC-990",
+    stock: 25,
+    category: "Serum",
+    concern: "Dark Spots",
+    rating: 4.9,
+    image: "/src/assets/images/vit_c_serum_1782645963026.jpg",
+    gallery: [
+      "/src/assets/images/vit_c_serum_1782645963026.jpg"
+    ],
+    ingredients: ["Hyaluronic Acid"],
+    texture: "Fluid elixir",
+    scent: "Subtle fresh cold-pressed sweet orange and vanilla",
+    clinicalEvidence: "Clinical assessments over a 28-day study revealed a 47% increase in skin brightness, 31% reduction in visible hyperpigmentation, and complete moisture retention across dry skin boundaries.",
+    directions: "Massage 3-4 drops onto clean face and neck in the morning and evening before applying moisturizer. Follow with SPF during the day.",
+    benefits: [
+      "Provides powerful antioxidant defense against UV stressors",
+      "Fades dark spots, acne scars, and uneven pigmentation",
+      "Deeply hydrates the epidermal layers with multi-weight hyaluronic acid",
+      "Boosts natural skin collagen and resilience"
+    ],
+    warnings: "For external use only. Avoid contact with eyes. Store in a cool, dark place to maintain optimal active freshness.",
+    reviewsCount: 124,
+    faq: [
+      { question: "Can I use this with Niacinamide?", answer: "Yes! While high-concentration L-ascorbic acid can occasionally flush when mixed with Niacinamide, our stabilized VitaCE 990 formula is designed to layer beautifully without reaction." },
+      { question: "Why does it look amber?", answer: "The active is stored in a protective light-shielding amber glass dropper bottle to preserve potency and prevent oxidation from ambient lighting." }
+    ]
+  },
+  {
     id: "cleanser-01",
     name: "LMOND Refining Face Cleanser",
     subtitle: "Squalane & Centella Soothing Emulsion",
@@ -345,41 +450,6 @@ export const mockProducts: Product[] = [
       { question: "Is this suitable for oily acne skin?", answer: "While non-comedogenic, it is a richer, lipid-restoring cream. If you have extremely oily skin, you might prefer a lighter gel-cream during the day and save this as a restorative night cream." }
     ]
   },
-  {
-    id: "moisturizer-almond-brightening",
-    name: "LMOND Almond Brightening Cream",
-    subtitle: "Skin Regeneration & Intense Moisture",
-    description: "A masterfully calibrated moisturizing treatment designed to accelerate epidermal cell regeneration, hydrate deep stratum corneum layers, and promote standard tone uniformity. Synergizing nourishing Sweet Almond Oil and Macadamia Nut Oil with active Vitamin C and Niacinamide, it seals the cutaneous lipid barrier and reveals a bright, smooth, and resilient skin state.",
-    price: 44,
-    discountPrice: 39,
-    size: "50 ml",
-    sku: "LMD-ALM-050",
-    stock: 35,
-    category: "Moisturizer",
-    concern: "Dark Spots",
-    rating: 4.9,
-    image: "/src/assets/images/almond_cream_brightening_1782645399805.jpg",
-    gallery: [
-      "/src/assets/images/almond_cream_brightening_1782645399805.jpg"
-    ],
-    ingredients: ["Niacinamide", "Squalane"],
-    texture: "Velvety Emulsion Cream",
-    scent: "Delicate natural cold-pressed sweet almond and light vanilla",
-    clinicalEvidence: "Clinical trials showed a 38% increase in epidermal hydration and a 29% improvement in skin tone radiance over a 28-day testing period with twice-daily application.",
-    directions: "Smooth a dime-sized amount onto clean face and neck in the morning and evening. Massage gently in upward circular motions until absorbed. Excellent under makeup.",
-    benefits: [
-      "Fades dark spots and optimizes overall tone radiance",
-      "Delivers intense, long-lasting moisture to dry cellular zones",
-      "Nourishes the lipid barrier to prevent transepidermal moisture loss",
-      "Accelerates natural skin regeneration and recovery"
-    ],
-    warnings: "For external use only. If irritation occurs, discontinue use. We recommend a patch test behind the neck before initial active facial application.",
-    reviewsCount: 112,
-    faq: [
-      { question: "Can I use this in my morning routine?", answer: "Yes! In fact, the Vitamin C and Niacinamide inside provide excellent antioxidant defense against environmental stressors during the day." },
-      { question: "Is it suitable for sensitive skin?", answer: "Absolutely. Sweet almond oil and macadamia nut oil are extremely gentle emollient lipids, and when paired with standard active concentrations, they soothe skin sensitivity." }
-    ]
-  }
 ];
 
 export const mockSkinConcerns: SkinConcern[] = [

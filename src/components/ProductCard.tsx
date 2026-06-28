@@ -127,7 +127,16 @@ export default function ProductCard({
         {/* Price & Add To Cart Button */}
         <div className="mt-5 flex items-center justify-between pt-3 border-t border-[#E8E1D5]">
           <div className="flex items-baseline gap-1.5">
-            {product.discountPrice ? (
+            {product.priceTHB ? (
+              product.discountPriceTHB ? (
+                <>
+                  <span className="text-base font-semibold text-[#1A1A1A]">฿{product.discountPriceTHB}</span>
+                  <span className="text-xs text-stone-400 line-through">฿{product.priceTHB}</span>
+                </>
+              ) : (
+                <span className="text-base font-semibold text-[#1A1A1A]">฿{product.priceTHB}</span>
+              )
+            ) : product.discountPrice ? (
               <>
                 <span className="text-base font-semibold text-[#1A1A1A]">${product.discountPrice}</span>
                 <span className="text-xs text-stone-400 line-through">${product.price}</span>

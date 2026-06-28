@@ -344,6 +344,41 @@ export const mockProducts: Product[] = [
     faq: [
       { question: "Is this suitable for oily acne skin?", answer: "While non-comedogenic, it is a richer, lipid-restoring cream. If you have extremely oily skin, you might prefer a lighter gel-cream during the day and save this as a restorative night cream." }
     ]
+  },
+  {
+    id: "moisturizer-almond-brightening",
+    name: "LMOND Almond Brightening Cream",
+    subtitle: "Skin Regeneration & Intense Moisture",
+    description: "A masterfully calibrated moisturizing treatment designed to accelerate epidermal cell regeneration, hydrate deep stratum corneum layers, and promote standard tone uniformity. Synergizing nourishing Sweet Almond Oil and Macadamia Nut Oil with active Vitamin C and Niacinamide, it seals the cutaneous lipid barrier and reveals a bright, smooth, and resilient skin state.",
+    price: 44,
+    discountPrice: 39,
+    size: "50 ml",
+    sku: "LMD-ALM-050",
+    stock: 35,
+    category: "Moisturizer",
+    concern: "Dark Spots",
+    rating: 4.9,
+    image: "/src/assets/images/almond_cream_brightening_1782645399805.jpg",
+    gallery: [
+      "/src/assets/images/almond_cream_brightening_1782645399805.jpg"
+    ],
+    ingredients: ["Niacinamide", "Squalane"],
+    texture: "Velvety Emulsion Cream",
+    scent: "Delicate natural cold-pressed sweet almond and light vanilla",
+    clinicalEvidence: "Clinical trials showed a 38% increase in epidermal hydration and a 29% improvement in skin tone radiance over a 28-day testing period with twice-daily application.",
+    directions: "Smooth a dime-sized amount onto clean face and neck in the morning and evening. Massage gently in upward circular motions until absorbed. Excellent under makeup.",
+    benefits: [
+      "Fades dark spots and optimizes overall tone radiance",
+      "Delivers intense, long-lasting moisture to dry cellular zones",
+      "Nourishes the lipid barrier to prevent transepidermal moisture loss",
+      "Accelerates natural skin regeneration and recovery"
+    ],
+    warnings: "For external use only. If irritation occurs, discontinue use. We recommend a patch test behind the neck before initial active facial application.",
+    reviewsCount: 112,
+    faq: [
+      { question: "Can I use this in my morning routine?", answer: "Yes! In fact, the Vitamin C and Niacinamide inside provide excellent antioxidant defense against environmental stressors during the day." },
+      { question: "Is it suitable for sensitive skin?", answer: "Absolutely. Sweet almond oil and macadamia nut oil are extremely gentle emollient lipids, and when paired with standard active concentrations, they soothe skin sensitivity." }
+    ]
   }
 ];
 

@@ -101,18 +101,18 @@ export default function Hero({ onExploreProducts, onOpenRoutineBuilder }: HeroPr
               className="relative aspect-3/4 rounded-3xl overflow-hidden shadow-xl border border-[#E8E1D5]"
             >
               <img
-                src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&q=80&w=600"
-                alt="LMOND Skincare Elixirs and Hydrators"
-                className="h-full w-full object-cover"
+                src="/src/assets/images/almond_cream_brightening_1782645399805.jpg"
+                alt="LMOND Almond Brightening Cream"
+                className="h-full w-full object-cover animate-fade-in"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-stone-900/40 via-transparent to-transparent" />
               
               {/* Overlay Glass Card */}
               <div className="absolute bottom-6 left-6 right-6 rounded-2xl bg-white/80 p-4 backdrop-blur-md border border-white/50 text-left">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-[#A68B67]">Featured Concentrate</p>
-                <p className="text-sm font-medium text-[#1A1A1A] mt-0.5">LMOND Refining Face Cleanser</p>
-                <p className="text-xs text-[#5C564F] mt-1">Squalane and Centella soothe redness, leaving skin clean, plumped, and thoroughly prepared.</p>
+                <p className="text-[10px] font-bold uppercase tracking-widest text-[#A68B67]">Featured Formulation</p>
+                <p className="text-sm font-medium text-[#1A1A1A] mt-0.5">Almond Brightening Cream</p>
+                <p className="text-xs text-[#5C564F] mt-1">Synergized sweet almond oil, macadamia oil, Vitamin C, and Niacinamide for dermal repair & cellular radiance.</p>
               </div>
             </motion.div>
           </div>

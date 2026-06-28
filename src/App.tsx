@@ -314,6 +314,139 @@ export default function App() {
                   </div>
                 </section>
 
+                {/* 2.5 Clinical Infographic Spotlight: Almond Brightening Cream */}
+                <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 border-t border-[#E8E1D5] pt-16 space-y-12">
+                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    {/* Visual Showcase - Left Column */}
+                    <div className="lg:col-span-5 space-y-6">
+                      <div className="relative group rounded-3xl overflow-hidden border border-[#E8E1D5] bg-[#FDFBF7] shadow-xl">
+                        <img
+                          src="/src/assets/images/almond_cream_brightening_1782645399805.jpg"
+                          alt="LMOND Almond Brightening Cream Infographic"
+                          className="h-full w-full object-cover aspect-square hover:scale-105 transition-transform duration-700"
+                          referrerPolicy="no-referrer"
+                        />
+                        <div className="absolute top-4 left-4 bg-[#A68B67] text-white text-[9px] font-bold tracking-widest uppercase px-3 py-1 rounded-full shadow-md">
+                          Formulation Spotlight
+                        </div>
+                      </div>
+
+                      {/* Interactive click to view detail */}
+                      <button
+                        onClick={() => {
+                          const prod = allProducts.find(p => p.id === 'moisturizer-almond-brightening');
+                          if (prod) {
+                            setSelectedProduct(prod);
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                          }
+                        }}
+                        className="w-full text-center py-3.5 px-6 rounded-2xl bg-[#1A1A1A] hover:bg-opacity-90 text-white text-xs uppercase tracking-widest font-semibold transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer"
+                      >
+                        <span>Acquire This Formulation</span>
+                        <ArrowUpRight className="h-4 w-4" />
+                      </button>
+                    </div>
+
+                    {/* Infographic Details - Right Column */}
+                    <div className="lg:col-span-7 space-y-8 text-left">
+                      <div className="space-y-2">
+                        <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#A68B67]">CLINICAL MONOGRAPH</span>
+                        <h2 className="text-3xl font-light text-[#1A1A1A] sm:text-4xl font-sans leading-tight">
+                          LMOND Almond Brightening Cream
+                        </h2>
+                        <p className="text-sm italic font-serif text-[#A68B67]">
+                          Skin Regeneration &bull; Intense Moisture
+                        </p>
+                      </div>
+
+                      <div className="space-y-4">
+                        <h3 className="text-xs font-semibold uppercase tracking-widest text-[#1A1A1A] border-b border-stone-200 pb-2">
+                          Ingredients Classification & Synergies
+                        </h3>
+
+                        {/* Color Coded Rows matching the user's diagram */}
+                        <div className="space-y-3 font-sans">
+                          {/* Solvent */}
+                          <div className="p-4 rounded-xl border border-cyan-100 bg-cyan-50/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2 transition-colors hover:bg-cyan-50/60">
+                            <div>
+                              <h4 className="text-xs font-bold text-cyan-900 uppercase tracking-wide">Deionized Water</h4>
+                              <p className="text-xs text-cyan-800/80 mt-0.5">High-purity micro-filtered carrier solvent to maximize bio-affinity.</p>
+                            </div>
+                            <span className="self-start sm:self-center px-2.5 py-1 text-[9px] font-semibold bg-cyan-100 text-cyan-800 rounded-full uppercase tracking-wider whitespace-nowrap">
+                              Solvent / Base
+                            </span>
+                          </div>
+
+                          {/* Emollient */}
+                          <div className="p-4 rounded-xl border border-blue-100 bg-blue-50/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2 transition-colors hover:bg-blue-50/60">
+                            <div>
+                              <h4 className="text-xs font-bold text-blue-900 uppercase tracking-wide">Prunus Amygdalus Dulcis Oil & Macadamia Nut Oil</h4>
+                              <p className="text-xs text-blue-800/80 mt-0.5">Cold-pressed plant lipids that perfectly mimic human sebum, deeply moisturizing dry flaking zones.</p>
+                            </div>
+                            <span className="self-start sm:self-center px-2.5 py-1 text-[9px] font-semibold bg-blue-100 text-blue-800 rounded-full uppercase tracking-wider whitespace-nowrap">
+                              Emollient / Base + Active
+                            </span>
+                          </div>
+
+                          {/* Brightening Actives */}
+                          <div className="p-4 rounded-xl border border-rose-100 bg-rose-50/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2 transition-colors hover:bg-rose-50/60">
+                            <div>
+                              <h4 className="text-xs font-bold text-rose-900 uppercase tracking-wide">Vitamin C & Niacinamide</h4>
+                              <p className="text-xs text-rose-800/80 mt-0.5">Powerful synergistic pairing that limits melanosome transport and brightens dull complexions.</p>
+                            </div>
+                            <span className="self-start sm:self-center px-2.5 py-1 text-[9px] font-semibold bg-rose-100 text-rose-800 rounded-full uppercase tracking-wider whitespace-nowrap">
+                              Brightening Actives
+                            </span>
+                          </div>
+
+                          {/* Functional Support */}
+                          <div className="p-4 rounded-xl border border-orange-100 bg-orange-50/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2 transition-colors hover:bg-orange-50/60">
+                            <div>
+                              <h4 className="text-xs font-bold text-orange-900 uppercase tracking-wide">Sodium Acrylates Crosspolymer, Hydrogenated Polydecene, Lauryl Glucoside</h4>
+                              <p className="text-xs text-orange-800/80 mt-0.5">Structuring agents that stabilize active ingredients and deliver a velvety, non-sticky finish.</p>
+                            </div>
+                            <span className="self-start sm:self-center px-2.5 py-1 text-[9px] font-semibold bg-orange-100 text-orange-800 rounded-full uppercase tracking-wider whitespace-nowrap">
+                              Emulsifier / Functional
+                            </span>
+                          </div>
+
+                          {/* Product Protection */}
+                          <div className="p-4 rounded-xl border border-yellow-100 bg-yellow-50/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2 transition-colors hover:bg-yellow-50/60">
+                            <div>
+                              <h4 className="text-xs font-bold text-yellow-900 uppercase tracking-wide">SHAROMIX DMP</h4>
+                              <p className="text-xs text-yellow-800/80 mt-0.5">Sterility assurance that prevents cellular contamination and product oxidation.</p>
+                            </div>
+                            <span className="self-start sm:self-center px-2.5 py-1 text-[9px] font-semibold bg-yellow-100 text-yellow-800 rounded-full uppercase tracking-wider whitespace-nowrap">
+                              Product Protection
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Summary Box translated from user's image */}
+                      <div className="p-5 rounded-2xl bg-[#F4F1EC] border border-[#E8E1D5] space-y-3 font-sans">
+                        <h4 className="text-xs font-bold uppercase tracking-widest text-[#1A1A1A]">Formula Outcomes</h4>
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs text-[#5C564F] font-light">
+                          <div className="space-y-1">
+                            <span className="font-semibold text-[#1A1A1A] block">✨ Cellular Radiance</span>
+                            <p className="leading-relaxed text-[11px] text-[#5C564F]/90">Vitamin C + Niacinamide work in harmony to brighten skin tone and fade discoloration.</p>
+                          </div>
+                          <div className="space-y-1 border-t sm:border-t-0 sm:border-l border-[#E8E1D5] pt-3 sm:pt-0 sm:pl-4">
+                            <span className="font-semibold text-[#1A1A1A] block">💧 Epidermal Moisture</span>
+                            <p className="leading-relaxed text-[11px] text-[#5C564F]/90">Almond and Macadamia nut oils deeply satisfy hydration voids and soothe surface dryness.</p>
+                          </div>
+                          <div className="space-y-1 border-t sm:border-t-0 sm:border-l border-[#E8E1D5] pt-3 sm:pt-0 sm:pl-4">
+                            <span className="font-semibold text-[#1A1A1A] block">🛡️ Skin Regeneration</span>
+                            <p className="leading-relaxed text-[11px] text-[#5C564F]/90">Rebuilds structural lipid integrity, boosting overall barrier recovery and resilience.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </section>
+
                 {/* 3. Biological ingredient teaser */}
                 <section className="bg-[#F4F1EC] border-y border-[#E8E1D5] py-16 text-left">
                   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

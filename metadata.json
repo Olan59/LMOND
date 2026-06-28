@@ -1,0 +1,6 @@
+{
+  "name": "LMOND Skincare",
+  "description": "A premium, science-backed, minimalist skincare e-commerce platform with AI-driven routines and ingredient analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -114,7 +114,7 @@ export default function Navbar({
     <>
       <header className="sticky top-0 z-50 w-full border-b border-[#E8E1D5] bg-[#FDFBF7]/90 backdrop-blur-md">
         {/* Announcement Bar */}
-        <div className="flex h-9 w-full items-center justify-between bg-[#1A1A1A] px-4 text-xs font-medium tracking-wider text-stone-100 sm:px-6">
+        {/* <div className="flex h-9 w-full items-center justify-between bg-[#1A1A1A] px-4 text-xs font-medium tracking-wider text-stone-100 sm:px-6">
           <div className="flex items-center gap-1.5">
             <Sparkles className="h-3 w-3 text-[#A68B67]" />
             <span>Complimentary worldwide carbon-neutral shipping on orders over $75</span>
@@ -128,7 +128,7 @@ export default function Navbar({
               My Rewards
             </button>
           </div>
-        </div>
+        </div> */}
 
         {/* Main Navbar */}
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -136,13 +136,10 @@ export default function Navbar({
           <div className="flex items-center gap-2">
             <button 
               onClick={() => onNavigate('home')} 
-              className="text-2xl font-light tracking-[0.3em] text-[#1A1A1A] font-serif italic cursor-pointer hover:opacity-80 transition-opacity"
+              // className="text-2xl font-light tracking-[0.3em] text-[#1A1A1A] font-serif italic cursor-pointer hover:opacity-80 transition-opacity"
             >
               LMOND
             </button>
-            <span className="hidden text-[9px] uppercase tracking-widest text-[#A68B67] sm:inline-block border border-[#E8E1D5] px-1.5 py-0.5 rounded-full font-medium">
-              Botanical Science
-            </span>
           </div>
 
           {/* Desktop Navigation Menu */}
